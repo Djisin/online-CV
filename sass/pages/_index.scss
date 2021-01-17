@@ -1,0 +1,91 @@
+body#centered {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 0;
+}
+#home-page-pic {
+    height: 400px;
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 50px;
+    z-index: -1;
+    animation-delay: 1s;
+}
+#home-page-head {
+    font-size: 70px;
+    position: absolute;
+    padding: 15px;
+    text-align: left;
+    margin-top: 163px;
+    margin-left: 20px;
+    height: 80px;
+    z-index: -2;
+    white-space: nowrap;
+    text-shadow: 2px 4px #fff;
+    &-2 {
+        font-size: 30px;
+        position: absolute;
+        margin-top: 280px;
+        margin-left: 40px;
+        text-shadow: 1px 1px #fff;
+    }
+}
+#home-page {
+    position: relative;
+    transform: translateY(-50%);
+    display: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50px;
+    width: auto;
+    min-width: 720px;
+    height: 500px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+    & a {
+        width: 150px;
+        border: 5px solid $menu-bg-color;
+        border-radius: 5px 5px 20px 5px;
+        background: $menu-bg-color;
+        position: absolute;
+        text-decoration: none;
+        color: $menu-hover-color;
+        box-shadow: 2px 2px #000;
+        display: inline-block;
+        margin-left: 15px;
+        margin-top: -5px;
+        z-index: 999;
+        transition-duration: 1s;
+        &:hover {
+            color: $menu-bg-color;
+            background-color: $menu-hover-color;
+            border: 5px solid $menu-hover-color;
+            transition: border-color 0.1s linear;
+            transition-duration: 0.2s;
+            &:after {
+                animation: slide-in-blurred-right 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+                content: "->";
+            }
+        }
+    }
+    & p {
+        margin-top: 440px;
+        font-size: 28px;
+        font-style: italic;
+        margin-left: -105px;
+        z-index: 8;
+    }
+}
+.slide-left {
+    animation: slide-in-blurred-left 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+    @for $i from 1 through $home-page-items {
+        &:nth-child(#{$i + 1}) {
+            animation-delay: (0.3s+0.6s * $i);
+        }
+    }
+}
+.slide-right {
+    animation: slide-in-blurred-right 1.2s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+.puff {
+    animation: puff-in-center 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}

@@ -1,0 +1,41 @@
+.left-align-text {
+   text-align: left;
+}
+
+.section {
+   text-align: center;
+   font-size: 22px;
+   & div {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+   & i {
+      text-align: right;
+      color: $menu-bg-color;
+      padding: 8px;
+   }
+   & a {
+      text-align: left;
+      padding: 8px;
+   }
+   & ul {
+      font-size: 18px;
+      text-align: left;
+      margin-left: -40px;
+      & li{
+         margin-bottom: 5px;
+      }
+   }
+   & span {
+      margin-top: 15px;
+      & img {
+         float: left;
+         width: 30px;
+         height: 30px;
+         padding-right: 15px;
+         padding-left: 10px;
+      }
+   }
+}

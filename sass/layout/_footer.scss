@@ -1,0 +1,15 @@
+footer {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    bottom: 0px;
+    max-width: 1039px;
+    box-sizing: border-box;
+    margin: 0px -10px 5px -10px;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    display: block;
+    height: 40px;
+    background-color: $header-bg-color;
+    box-shadow: 1px 1px #222;
+}

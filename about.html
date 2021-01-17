@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Miloš Radivojević - Project 3</title>
+
+    <meta charset="utf-8">
+    <meta name="language" content="en-us">
+    <meta name="author" content="Miloš Radivojević">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Author: Miloš Radivojević,
+                        Junior Web Developer, Category: Projects">
+
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/mobile.css" type="text/css" rel="stylesheet" media="screen and (max-width: 720px)">
+    <link href="img/favicon.ico" type="image/x-icon" rel="shourtcut icon">
+
+    <script src="https://kit.fontawesome.com/ef6b1b88f1.js"></script>
+    <script src="js/basic.js"></script>
+</head>
+
+<body onload="displayPage()">
+    <div id="loader"></div>
+    <content id="container" class="animate-bottom">
+        <header>
+            <h1>About me</h1>
+        </header>
+        <nav>
+            <img id="main-picture" />
+            <ul id="menu">
+                <a class="menu-button icon-plus" href="#menu">
+                    <span class="hamburger hamburger-1"></span>
+                    <span class="hamburger hamburger-2"></span>
+                    <span class="hamburger hamburger-3"></span>
+                    <span class="menu-tip">
+                        <p>Show menu</p>
+                    </span>
+                </a>
+                <a class="menu-button icon-minus" href="#0">
+                    <span class="hamburger hamburger-1"></span>
+                    <span class="hamburger hamburger-2"></span>
+                    <span class="hamburger hamburger-3"></span>
+                    <span class="menu-tip">
+                        <p>Hide menu</p>
+                    </span>
+                </a>
+                <li class="menu-item">
+                    <a href="index.html">
+                        <span href="#" class="add-info">
+                            <p>Home</p>
+                        </span>
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="about.html">
+                        <span href="#" class="add-info">
+                            <p>About Me</p>
+                        </span>
+                        <i class="fas fa-info-circle"></i>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="education.html">
+                        <span class="add-info">
+                            <p>Education</p>
+                        </span>
+                        <i class="fas fa-user-graduate"></i>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="experience.html">
+                        <span class="add-info">
+                            <p>Experience</p>
+                        </span>
+                        <i class="fas fa-business-time"></i>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="portfolio.html">
+                        <span class="add-info">
+                            <p>Portfolio</p>
+                        </span>
+                        <i class="fas fa-user-tie"></i>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="contact.html">
+                        <span class="add-info">
+                            <p>Contact</p>
+                        </span>
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section class="right-content">
+            <h1>Miloš Radivojević</h1>
+            <h3 class="left-align-text">Web Developer</h3>
+
+            <p>Degree educated Web Developer with hands on knowledge of the latest trends and developments in the
+                industry. Diverse career background and involvement ensures successful communication with both team
+                and customers. Leverage commitment, technical, analytical and problem-solving skills, leading to
+                accurately translating clients' needs into dynamic, fully functional appealing high-speed websites,
+                platforms and interactive applications fueling competitive advantage and revenue growth.</p>
+
+            <section class="section">
+                <h3 class="small-header">Key Skills</h3>
+                <div>
+                    <ul>
+                        <li>Creating stable backend application (REST API) with Express.js</li>
+                        <li>Developing different kinds of applications with native JavaScript</li>
+                        <li>Building CSS styles with BEM in mind and preprocessor SASS, including Bootstrap</li>
+                        <li>Implementing and creating MySQL database</li>
+                        <li>Comfortable working independently with minimum supervision</li>
+                        <li>A collaborative team player with great communication skills</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="section">
+                <h3 class="small-header">Hobbies</h3>
+                <div>
+                    <a><i class="fas fa-chalkboard-teacher"></i>Teaching</a>
+                    <a><i class="fas fa-swimmer"></i>Swimming</a>
+                    <a><i class="fas fa-volleyball-ball"></i>Valleyball</a>
+                    <a><i class="fas fa-luggage-cart"></i>Travelling</a>
+                </div>
+            </div>
+
+            <section class="section">
+                <h3 class="small-header">Languages</h3>
+                <div>
+                    <span>Serbian<img src="icons/srbf.png"></span>
+                    <span>Romanian<img src="icons/romf.png"></span>
+                    <span>English<img src="icons/ukf.png"></span>
+                </div>
+            </section>
+        </section>
+        <footer>© 2021 • All rights reserved. • Designed by: Miloš Radivojević</footer>
+    </content>
+</body>
+
+</html>
+
+<!-- filters -->
+<svg style="width:0px; height:0px;">
+    <defs>
+        <filter id="shadowed-goo">
+            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="11" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+            <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2"
+                result="shadow" />
+            <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+            <feComposite in2="shadow" in="goo" result="goo" />
+            <feComposite in2="goo" in="SourceGraphic" result="mix" />
+        </filter>
+        <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="11" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -6" result="goo" />
+            <feComposite in2="goo" in="SourceGraphic" result="mix" operator="atop" />
+        </filter>
+        <filter id="goo-small">
+            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="6" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 15 -5" result="goo" />
+            <feComposite in2="goo" in="SourceGraphic" result="mix" />
+        </filter>
+    </defs>
+</svg>

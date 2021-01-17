@@ -1,0 +1,161 @@
+nav{
+   min-width: 250px;
+   height: 300px;
+   grid-column-start: 1;
+   grid-column-end: 2;
+   z-index: 555;
+   & a{
+      
+      & img{
+         border:50%;
+         width:200px;
+         height:200px;
+      }
+   }
+}
+#main-picture{
+   display:none;
+   width:160px;
+   height:160px;
+   background-image: url("../img/milos.jpg");
+   background-size: 100%;
+}
+#menu{
+  @extend %goo;
+  min-width: 250px;
+   list-style: none;
+   &:not(:target){
+      >a{
+         &:first-of-type{
+            opacity: 1;
+            z-index: 1;  
+         }
+      }
+      >.icon-plus{
+         &:before{
+            opacity: 1;
+         }
+      }
+   }
+   &:target{
+      >a{
+         &:last-of-type{
+            opacity: 1;
+            z-index: 1;
+         }
+      }
+      >.icon-minus{
+         &:before {
+            opacity: 1;
+         }
+      }
+      >.menu-item{
+         @for $i from 1 through $main-menu-items{
+         &:nth-child(#{$i+2}){
+            transform: rotate(-15deg+(35deg*$i)) translateY(-150px) rotate(15deg-(35deg*$i));
+            animation-delay: (0.5s-0.1s*$i);
+            }
+         }
+      }  
+   }
+}
+.menu-button {
+   padding-top:0px;
+   padding-left: 0px;
+   width: 170px;
+   height: 170px;
+   position: absolute;
+   margin-top: 80px;
+   border-radius: 50%;
+   background: url("../img/milos.jpg");
+   background-size: 100%;
+   left:11%;
+   overflow: hidden;
+   text-decoration: none;
+   opacity: 0;
+   z-index: 0;
+   transition-duration: 0.15s;
+   & span{
+   visibility: hidden;
+   opacity: 0;
+   }
+   &:hover{
+      transition-duration: 0.15s;
+   transform: scale(1.05,1.05);
+   }
+}
+#menu a>.menu-tip{
+   background:$menu-bg-color;
+   color: $menu-icon-color;
+   display:block;
+   margin-top:140px;
+   transition-duration: 0.3s;
+}
+ul#menu a:hover>.menu-tip{
+   transition-duration: 0.3s;
+   opacity: 1;
+   visibility: visible;
+}
+.menu-item {
+   @extend %goo;
+   box-sizing: border-box;
+   width: 80px;
+   height: 80px;
+   position: absolute;
+   left: 35%;
+   font-size: 200%;
+   line-height: 70px;
+   margin-top: 130px;
+   border-radius: 100%;
+   background-color: $menu-bg-color;
+   z-index: 0;
+   transition: .5s;
+   cursor: pointer;
+   & a {
+      margin-top:5px;
+      margin-left:5px;
+      display: block;
+      z-index: 0;
+      width:70px;
+      border-radius: 50%;
+      color:$menu-icon-color;
+      &:hover{
+         color:$menu-bg-color;
+         background: $menu-icon-color;
+      }
+   }
+}
+%goo{
+  filter:url('#goo');
+}
+.add-info{
+   width: 150px;
+   height: 20px;
+   margin: 20px 0px 0px -60px;
+   font-size: 15px;
+   position: absolute;
+   padding-bottom: 5px;
+   background: $menu-bg-color;
+   z-index:-50;
+   white-space: nowrap;
+   transition-duration: 0.5s;
+   
+}
+.menu-item a span{
+   visibility: hidden;
+   opacity: 0;
+   transition-timing-function:cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+li.menu-item a:hover>.add-info{
+   transition-duration: 0.3s;
+   transform:translate3d(100px,0,0);
+   opacity: 1;
+   transition-timing-function:cubic-bezier(0.165, 0.840, 0.440, 1.000);
+   visibility: visible;
+}
+li a span p{
+   margin:0;
+   margin-top:-25px;
+   color: $menu-icon-color;
+   transition-duration: -0.5s;
+}

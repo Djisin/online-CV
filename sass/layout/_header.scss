@@ -1,0 +1,24 @@
+header {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    height: 60px;
+    border-radius: 10px;
+    background: $header-bg-color;
+    margin: 20px -15px 0px -15px;
+    box-shadow: 2px 2px #222;
+    & h1 {
+        padding-top: 10px;
+        justify-content: center;
+        margin: 1px auto;
+        text-transform: uppercase;
+    }
+}
+.small-header {
+    height: auto;
+    border-radius: 4px;
+    background: $header-bg-color;
+    margin: 0px -25px 10px -25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 1px 1px #222;
+}

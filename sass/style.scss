@@ -1,0 +1,14 @@
+@import "./utilities/variables";
+@import "./utilities/functions";
+
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/container";
+@import "./layout/footer";
+
+@import "./pages/about";
+@import "./pages/index";
+@import "./pages/education";
+@import "./pages/experience";
+@import "./pages/contact";
+@import "./pages/portfolio";

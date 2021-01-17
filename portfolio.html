@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Miloš Radivojević - Project 3</title>
+
+    <meta charset="utf-8">
+    <meta name="language" content="en-us">
+    <meta name="author" content="Miloš Radivojević">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/mobile.css" type="text/css" rel="stylesheet" media="screen and (max-width: 720px)">
+    <link href="img/favicon.ico" type="image/x-icon" rel="shourtcut icon">
+
+    <script src="https://kit.fontawesome.com/ef6b1b88f1.js"></script>
+    <script src="js/basic.js"></script>
+</head>
+
+<body onload="displayPage()">
+    <div id="loader"></div>
+    <content id="container" class="animate-bottom">
+        <header>
+            <h1>Portfolio</h1>
+        </header>
+        <nav>
+            <img id="main-picture" />
+            <ul id="menu">
+                <a class="menu-button icon-plus" href="#menu">
+                    <span class="hamburger hamburger-1"></span>
+                    <span class="hamburger hamburger-2"></span>
+                    <span class="hamburger hamburger-3"></span>
+                    <span class="menu-tip">
+                        <p>Show menu</p>
+                    </span>
+                </a>
+                <a class="menu-button icon-minus" href="#0">
+                    <span class="hamburger hamburger-1"></span>
+                    <span class="hamburger hamburger-2"></span>
+                    <span class="hamburger hamburger-3"></span>
+                    <span class="menu-tip">
+                        <p>Hide menu</p>
+                    </span>
+                </a>
+                <li class="menu-item">
+                    <a href="index.html">
+                        <span href="#" class="add-info">
+                            <p>Home</p>
+                        </span>
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="about.html">
+                        <span href="#" class="add-info">
+                            <p>About Me</p>
+                        </span>
+                        <i class="fas fa-info-circle"></i>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="education.html">
+                        <span class="add-info">
+                            <p>Education</p>
+                        </span>
+                        <i class="fas fa-user-graduate"></i>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="experience.html">
+                        <span class="add-info">
+                            <p>Experience</p>
+                        </span>
+                        <i class="fas fa-business-time"></i>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="portfolio.html">
+                        <span class="add-info">
+                            <p>Portfolio</p>
+                        </span>
+                        <i class="fas fa-user-tie"></i>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="contact.html">
+                        <span class="add-info">
+                            <p>Contact</p>
+                        </span>
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section class="right-content">
+            <div id="portfolio">
+                <div class="project">
+                    <h3 class="small-header">eCommerce Website</h3>
+                    <a target="_blank" href="https://github.com/Djisin/Project-5"><img src="img/eCom.png"></a>
+                    <p class="date-finished">10. February 2020.</p>
+                    <h6 id="nesto">Description:</h6>
+                    <p class="overflown-p">Amazon-style one site-sells-all web app, developed with intention to sell one
+                        group of products.
+                        <br><br>In order to be run, requires backend part provided by OpenClassroms.
+                    </p>
+                </div>
+                <div class="project">
+                    <h3 class="small-header">Secure API for Review App</h3>
+                    <a target="_blank" href="https://github.com/Djisin/Project-6"><img src="img/soPec.png"></a>
+                    <p class="date-finished">25. February 2020.</p>
+                    <h6 id="nesto">Description:</h6>
+                    <p class="overflown-p">Based on MongoDB, Mongoose, Express.js and Node.js, featuring collaboration
+                        with front-end developers.
+                        <br><br>In order to be run, requires frontend part provided by
+                        OpenClassroms.
+                    </p>
+                </div>
+                <div class="project">
+                    <h3 class="small-header">Groupomania Social Network</h3>
+                    <a target="_blank" href="https://github.com/Djisin/Project-7"><img src="img/GroupoM.png"></a>
+                    <p class="date-finished">12. May 2020.</p>
+                    <h6 id="nesto">Description:</h6>
+                    <p class="overflown-p">Full stack solution for internal network with authentication and mySQL
+                        database, article creation, upvoting and downvoting, features of popular social networks
+                        (profile, double level of comments, etc), built with native JavaScript.
+                        <br><br>Instructions how to
+                        set up project are in readme.md
+                    </p>
+                </div>
+                <div class="project">
+                    <h3 class="small-header">Placeholder text</h3>
+                    <a target="_blank" href=""><img src="img/pic4.jfif"></a>
+                    <p class="date-finished">27. June 2019.</p>
+                    <h6 id="nesto">Description:</h6>
+                    <p class="overflown-p">Ac turpis egestas maecenas pharetra convallis
+                        posuere morbi leo. Scelerisque eu ultrices vitae auctor eu augue ut.
+                        Non odio euismod lacinia at quis risus.
+                    </p>
+                </div>
+                <div class="project">
+                    <h3 class="small-header">Placeholder text</h3>
+                    <a target="_blank" href=""><img src="img/pic5.jfif"></a>
+                    <p class="date-finished">20. September 2019.</p>
+                    <h6 id="nesto">Description:</h6>
+                    <p class="overflown-p">Quis commodo odio aenean sed adipiscing
+                        diam donec. Est ante in nibh mauris cursus. Dui accumsan
+                        sit amet nulla facilisi morbi tempus. Arcu cursus vitae
+                        congue mauris rhoncus aenean vel elit. Dui sapien eget mi
+                        proin sed libero enim sed.
+                    </p>
+                </div>
+                <div class="project">
+                    <h3 class="small-header">Placeholder text</h3>
+                    <a target="_blank" href=""><img src="img/pic6.jpg"></a>
+                    <p class="date-finished">25. November 2019.</p>
+                    <h6 id="nesto">Description:</h6>
+                    <p class="overflown-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Vulputate mi sit amet mauris. Tellus orci ac auctor augue mauris
+                        augue neque gravida. Aenean vel elit scelerisque mauris.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer>© 2020 • All rights reserved. • Designed by: Miloš Radivojević</footer>
+    </content>
+</body>
+
+</html>
+
+<!-- filters -->
+<svg style="width:0px; height:0px;">
+    <defs>
+        <filter id="shadowed-goo">
+            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="11" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+            <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2"
+                result="shadow" />
+            <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+            <feComposite in2="shadow" in="goo" result="goo" />
+            <feComposite in2="goo" in="SourceGraphic" result="mix" />
+        </filter>
+        <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="11" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -6" result="goo" />
+            <feComposite in2="goo" in="SourceGraphic" result="mix" operator="atop" />
+        </filter>
+        <filter id="goo-small">
+            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="6" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 15 -5" result="goo" />
+            <feComposite in2="goo" in="SourceGraphic" result="mix" />
+        </filter>
+    </defs>
+</svg>
