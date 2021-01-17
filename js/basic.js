@@ -22,20 +22,14 @@ document.addEventListener("DOMContentLoaded", function () {
     let menuElement = document.getElementById('menu');
     document.addEventListener('click', function (event) {
         let isClickedInside = menuElement.contains(event.target);
-        console.log('jedan')
         if (!isClickedInside) {
-            console.log('dva')
-            //if (url.substring(url.lastIndexOf('#') + 1) === 'menu') {
-                console.log('tri')
-                document.getElementsByClassName('menu-button icon-minus')[0].click()
-            //}
+            document.getElementsByClassName('menu-button icon-minus')[0].click()
         }
     })
     //change index.html
     if (url.substring(url.lastIndexOf('/') + 1) === 'index.html') {
-        if ((window.innerWidth || document.documentElement.clientWidth) < 420){
-            console.log('cetiri')
-            document.getElementById('home-page-head').innerHTML = 'Miloš'+'<br>'+ 'Radivojević'
+        if ((window.innerWidth || document.documentElement.clientWidth) < 420) {
+            document.getElementById('home-page-head').innerHTML = 'Miloš' + '<br>' + 'Radivojević'
         }
     }
 });
