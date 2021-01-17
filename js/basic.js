@@ -5,7 +5,7 @@ function displayPage() {
 
 function showPage() {
     document.getElementById("loader").style.display = "none";
-    if (window.location.pathname == "/index.html") {
+    if (window.location.pathname == "/online-CV/index.html") {
         document.getElementById("home-page").style.display = "block";
     }
     else if (window.matchMedia("(max-width: 720px)").matches) {
